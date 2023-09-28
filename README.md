@@ -1,4 +1,4 @@
-# File Explorer in Kotlin and JavaFX
+# File Explorer
 
 ## Overview
 
