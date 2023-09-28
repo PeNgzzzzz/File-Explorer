@@ -24,3 +24,14 @@ This project is a File Explorer application built using Kotlin and JavaFX. It pr
 - OpenJDK 17
 - Kotlin 1.8 or later
 - JavaFX 18
+
+## How to Run
+- Download the code.
+- Open it in any IDE you prefer.
+- Build the project using Gradle.
+- Run it!
+
+## Testing
+
+The application has been tested in a sandbox environment to ensure that file operations are safe and do not affect important system files. The test directory structure is included in the project.
+
