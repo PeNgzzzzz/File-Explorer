@@ -26,10 +26,10 @@ This project is a File Explorer application built using Kotlin and JavaFX. It pr
 - JavaFX 18
 
 ## How to Run
-- Download the code.
-- Open it in any IDE you prefer.
-- Build the project using Gradle.
-- Run it!
+1. Download the code.
+2. Open it in any IDE you prefer.
+3. Build the project using Gradle.
+4. Run it!
 
 ## Testing
 
