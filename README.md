@@ -6,11 +6,29 @@ This project is a File Explorer application built using Kotlin and JavaFX. It pr
 
 ## Features
 
-- **File and Directory Listing**: Displays a sorted list of files and directories.
-- **Keyboard and Mouse Navigation**: Navigate through the file system using keyboard shortcuts, toolbar buttons, or mouse clicks.
-- **File Operations**: Rename, move, and delete files or directories.
-- **File Preview**: View the content of selected files. Supports text and image files.
-- **Status Bar**: Shows the full path and filename of the selected file or directory.
+### File and Directory Listing
+- **Alphabetical Sorting**: Files and directories are displayed in alphabetical order for easy navigation.
+- **Test Folder**: The application starts by displaying the contents of a test folder, providing a sandbox environment for safe testing.
+
+### Keyboard and Mouse Navigation
+- **Multiple Methods**: Navigate through the file system using keyboard shortcuts, toolbar buttons, or mouse clicks.
+- **Status Line**: Always displays the path and filename of the currently selected item for better user awareness.
+
+### File Operations
+- **Rename**: Easily rename files or directories with a prompt for the new name. Invalid names are flagged with an error message.
+- **Move**: Move files or directories to different locations through a File Chooser dialog box.
+- **Delete**: Safely delete files or directories after a confirmation prompt.
+
+### File Preview
+- **Text and Image Support**: Preview the contents of text files and view images directly within the application.
+- **Unsupported Types**: For unsupported or unreadable files, appropriate messages are displayed.
+
+### Status Bar
+- **Detailed Information**: The status bar at the bottom provides detailed information about the selected file, including its full path and filename.
+
+### Resizable and Usable UI
+- **Ease-of-Use**: The UI is designed for ease-of-use and can be resized according to user preference.
+- **Toolbar and Menu**: A feature-rich toolbar and menu system for easy navigation and file manipulation.
 
 ## Technical Stack
 
