@@ -47,4 +47,3 @@ This project is an Android-based PDF reader that allows users to read, annotate,
 1. Clone the repository.
 2. Open the project in your Android development environment.
 3. Run the application on the Pixel C tablet AVD.
-
