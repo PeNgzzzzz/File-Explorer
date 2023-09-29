@@ -1,55 +1,50 @@
-# File Explorer
+# Android PDF Reader
 
-## Overview
-
-This project is a File Explorer application built using Kotlin and JavaFX. It provides a user-friendly interface to browse files and directories on your local file system. The application allows for various file operations such as renaming, moving, and deleting files or directories. It also supports viewing the content of selected files based on their types.
+## Introduction
+This project is an Android-based PDF reader that allows users to read, annotate, and navigate through PDF documents. The application is designed to work on Android tablets and supports a range of features including drawing, highlighting, erasing, zooming, and panning.
 
 ## Features
 
-### File and Directory Listing
-- **Alphabetical Sorting**: Files and directories are displayed in alphabetical order for easy navigation.
-- **Test Folder**: The application starts by displaying the contents of a test folder, providing a sandbox environment for safe testing.
+### Initial Launch
+- **Sample PDF**: On first launch, a sample PDF is loaded into the application.
+- **Titlebar**: Displays the name of the currently loaded PDF.
+- **Statusbar**: Shows the current page number and total number of pages (e.g., "page 2/5").
 
-### Keyboard and Mouse Navigation
-- **Multiple Methods**: Navigate through the file system using keyboard shortcuts, toolbar buttons, or mouse clicks.
-- **Status Line**: Always displays the path and filename of the currently selected item for better user awareness.
+### Navigation
+- **Page Browsing**: Users can browse forward and backward through the document pages.
+- **Status Update**: The status bar updates to indicate the current page.
+- **Swipe/Buttons**: Users can navigate pages either by swiping left/right or using back/forward buttons.
 
-### File Operations
-- **Rename**: Easily rename files or directories with a prompt for the new name. Invalid names are flagged with an error message.
-- **Move**: Move files or directories to different locations through a File Chooser dialog box.
-- **Delete**: Safely delete files or directories after a confirmation prompt.
+### Annotation
+- **Drawing**: Users can draw on the current page with a default color and line thickness.
+- **Highlighting**: A thick, transparent yellow brush allows users to highlight text without obscuring it.
+- **Erasing**: Users can erase any existing drawing or highlighting.
 
-### File Preview
-- **Text and Image Support**: Preview the contents of text files and view images directly within the application.
-- **Unsupported Types**: For unsupported or unreadable files, appropriate messages are displayed.
+### Zoom & Pan
+- **Two-Finger Gestures**: Users can zoom in and out using a two-finger pinch gesture.
+- **Panning**: When zoomed in, users can pan around the document.
+- **Direct Manipulation**: All gestures adhere to direct manipulation principles.
 
-### Status Bar
-- **Detailed Information**: The status bar at the bottom provides detailed information about the selected file, including its full path and filename.
+### Undo/Redo
+- **Undo**: Users can undo the last 5 actions.
+- **Redo**: Users can redo actions that were undone.
 
-### Resizable and Usable UI
-- **Ease-of-Use**: The UI is designed for ease-of-use and can be resized according to user preference.
-- **Toolbar and Menu**: A feature-rich toolbar and menu system for easy navigation and file manipulation.
+### Additional Features
+- **Orientation Handling**: The application supports both portrait and landscape modes without data loss.
+- **Multi-Page Support**: Supports multi-page PDFs and retains annotations when navigating between pages.
+- **Data Persistence**: Annotations are saved when the user changes pages or exits the application.
 
-## Technical Stack
+### Gesture Flexibility (NEW)
+- **Two-Finger Zooming**: Mandatory two-finger zooming is implemented.
+- **Modal Operations**: Users can toggle between draw and pan modes, using one finger for both.
 
-- **Programming Language**: Kotlin 1.8
-- **Framework**: JavaFX 18
-- **Build Tool**: Gradle
-- **IDE**: IntelliJ 2023.1.1
-
-## Prerequisites
-
-- OpenJDK 17
-- Kotlin 1.8 or later
-- JavaFX 18
+## Technical Requirements
+- **Android API**: Must be at least API 30.
+- **AVD**: Pixel C tablet AVD with API 30 or later.
+- **Orientation**: Must handle orientation changes without data loss.
 
 ## How to Run
-1. Download the code.
-2. Open it in any IDE you prefer.
-3. Build the project using Gradle.
-4. Run it!
-
-## Testing
-
-The application has been tested in a sandbox environment to ensure that file operations are safe and do not affect important system files. The test directory structure is included in the project.
+1. Clone the repository.
+2. Open the project in your Android development environment.
+3. Run the application on the Pixel C tablet AVD.
 
