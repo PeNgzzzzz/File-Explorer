@@ -1,5 +1,7 @@
 # File Explorer
 
+<img src="https://github.com/PeNgzzzzz/File-Explorer/blob/main/Preview.png" alt="Preview" align="center" width="auto" height="auto" />
+
 ## Introduction
 This project is a File Explorer application built using Kotlin and JavaFX. It allows users to browse, manage, and interact with files and directories on their computer.
 
